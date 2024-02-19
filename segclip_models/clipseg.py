@@ -508,7 +508,7 @@ class CLIPSegMultiLabel(nn.Module):
 
         self.pascal_classes = VOC
 
-        from models.clipseg import CLIPDensePredT
+        from segclip_models.clipseg import CLIPDensePredT
         from general_utils import load_model
         # self.clipseg = load_model('rd64-vit16-neg0.2-phrasecut', strict=False)
         self.clipseg = load_model(model, strict=False)
